@@ -3,4 +3,4 @@
 
 # TEAM
 
-- Thibaud Colas -- @ThibWeb
+- Thibaud Colas -- @thibaud_colas
