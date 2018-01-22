@@ -1,0 +1,23 @@
+language: node_js
+cache:
+  directories:
+  - node_modules
+install:
+- echo 'no install'
+script:
+- echo 'success'
+branches:
+  except:
+  - gh-pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+notifications:
+  email: false
+env:
+  global:
+    secure: oZm3gmBpIzKGQiJqYX3ntGgjwVZsUsCZEFo0M4xDNvezsqq4cV4ZTLzVU1IejApB1dGgZss4qEJRt+byVlmY3ypjoZCeGpK5D8uF5O6iEmlx+svhE0+umIfUr6qZbRMqHTDgA4KNavsQ8hLveUlL+mlvamA72lYe8M3MXmg3Auk=
